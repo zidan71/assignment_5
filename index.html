@@ -1,73 +1,100 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment 5</title>
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
-<script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
 
-<style>
-    /* font start */
-    @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
-    /* font end */
+    <style>
+        /* font start */
+        @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+        /* font end */
 
-    .text-big{
-        font-family: "Lexend", sans-serif;
-        font-weight:700;
-        font-size: 20px;
-        color: #111111;
-    }
-    .text-small{
-        font-family: "Lexend", sans-serif;
-        font-size: 16px;
-        font-weight: 300;
-    }
-    .button{
-        border-radius: 8px;
-background: rgb(180, 244, 97);color: rgb(17, 17, 17);
-font-family: "Lexend", sans-serif;
-font-size: 20px;
-font-weight: 600;
-text-align: left;
-padding: 12px 32px 12px 32px;
-    }
+        .text-big {
+            font-family: "Lexend", sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            color: #111111;
+        }
 
+        .text-small {
+            font-family: "Lexend", sans-serif;
+            font-size: 16px;
+            font-weight: 300;
+        }
+
+        .button {
+            border-radius: 8px;
+            background: rgb(180, 244, 97);
+            color: rgb(17, 17, 17);
+            font-family: "Lexend", sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            text-align: left;
+            padding: 12px 32px 12px 32px;
+        }
     </style>
 </head>
 
 <body>
-        <header>
-            <nav class=" bg-pink-100 ">
-                <div class="navbar max-w-[80%] mx-auto flex justify-between pt-3 pb-7">
-                    
-                    <button class="button">Blog</button>
-                    <div class="flex gap-3">
-                        <img src="images/donate 1.png" alt="">
-                        <h1 class="text-big">Donate Bangladesh</h1>
-                    </div>
+    <header class="sticky top-0 ">
+        <nav class="  bg-pink-100 ">
+            <div class="navbar max-w-[80%] mx-auto flex justify-between pt-3 pb-7">
 
-                    <div class="flex gap-3">
-                        <img src="images/dollar 1.png" alt="">
-                        <h2 style="color: black; font-size: 20px; font-weight: 500;">5500 BDT</h2>
-                    </div>
+                <button class="button">Blog</button>
+                <div class="flex gap-3">
+                    <img src="images/donate 1.png" alt="">
+                    <h1 class="text-big">Donate Bangladesh</h1>
+                </div>
 
-                    </div>
-                  
-            </nav>
-        </header>
-        
-        <main class="bg-white">
-            <!-- toggle -->
-            <div class=" pt-16 flex justify-center gap-7">
-                <button class="button">Donation</button>
-                <button class="button">History</button>
+                <div class="flex gap-3">
+                    <img src="images/dollar 1.png" alt="">
+                    <h2 style="color: black; font-size: 20px; font-weight: 500;">5500 BDT</h2>
+                </div>
+
             </div>
-            <!-- toggle end -->
 
-            <!-- card section 1st-->
-             <div class="max-w-[80%] mx-auto" style="box-sizing: border-box;
+        </nav>
+
+
+
+    </header>
+
+    <main class="bg-white ">
+
+
+        <div class="   fixed inset-0  items-center bg-black bg-opacity-50  text-center pb-6 hidden">
+            <div class="flex justify-center items-center h-full">
+                <div class="bg-slate-500 rounded-lg shadow-lg p-6 w-96 mt-6">
+                    <h1>Congrats!</h1><br>
+                    <div class="flex justify-center">
+                        <img src="images/dollar 1.png" alt="">
+                    </div><br>
+                    <h2>You have donated for Humankind</h2><br>
+                    <h1>Successfully</h1><br>
+                    <button class="button">close confirmation</button>
+                </div>
+            </div>
+        </div>
+        <!-- popup message start -->
+
+
+
+        <!-- popup message end -->
+
+        <!-- toggle -->
+        <div class=" pt-16 flex justify-center gap-7">
+            <button class="button ">Donation</button>
+            <button class="button  bg-white outline outline-1 outline-black">History</button>
+        </div>
+        <!-- toggle end -->
+
+        <!--  1st card start-->
+        <div class="max-w-[75%] mx-auto p-7 flex gap-10 mt-5 mb-5" style="box-sizing: border-box;
              border: 1px solid rgba(17, 17, 17, 0.1);
              border-radius: 16px;
              background: rgb(255, 255, 255);">
@@ -75,30 +102,100 @@ padding: 12px 32px 12px 32px;
             <img src="images/first.png" alt="">
 
 
-            <div> 
-                    <div style="border-radius: 8px;
-                    background: rgba(17, 17, 17, 0.05);">
+            <div class="max-w-[522px]">
+                <div class="flex gap-3 max-w-[110px]" style="border-radius: 8px;
+                    background: rgba(17, 17, 17, 0.05); padding: 7px;">
 
                     <img src="images/dollar 1.png" alt="">
-                    <h1>0 BDT</h1>
+                    <h1 class="text-black font-bold">0 BDT</h1>
 
-                    </div>
+                </div><br>
 
-                    <h1 class="text-big">Donate for Flood at Noakhali, Bangladesh</h1>
-                    <p class="text-small"> The recent floods in Noakhali have caused significant damage to homes  infrastructure. Your donation will help provide essential supplies and  to those affected by this disaster. Every contribution, big or small, makes  difference. Please join us in supporting the relief efforts and making a positive impact on the lives of those in need.</p>
-                    <input type="text" placeholder="Type here" class="input input-bordered w-full max-w-xs" />
-                    <button class="button">Donate Now</button>
+                <h1 class="text-big">Donate for Flood at Noakhali, Bangladesh</h1><br>
+                <p class="text-small"> The recent floods in Noakhali have caused significant damage to homes
+                    infrastructure. Your donation will help provide essential supplies and to those affected by this
+                    disaster. Every contribution, big or small, makes difference. Please join us in supporting the
+                    relief efforts and making a positive impact on the lives of those in need.</p><br>
+                <input type="text" placeholder="Write Donation Amount"
+                    class="input input-bordered bg-white w-full max-w-[522px]" /><br><br>
+                <button class="button w-[522px] text-center">Donate Now</button>
             </div>
 
 
 
-             </div>
+        </div>
+        <!-- 1st card end -->
 
-        </main>
+        <!-- 2nd card start -->
+        <div class="max-w-[75%] mx-auto p-7 flex gap-10 mt-5 mb-5" style="box-sizing: border-box;
+              border: 1px solid rgba(17, 17, 17, 0.1);
+              border-radius: 16px;
+              background: rgb(255, 255, 255);">
 
-        <footer>
+            <img src="images/second.png" alt="">
 
-        </footer>
+
+            <div class="max-w-[522px]">
+                <div class="flex gap-3 max-w-[110px]" style="border-radius: 8px;
+                     background: rgba(17, 17, 17, 0.05); padding: 7px;">
+
+                    <img src="images/dollar 1.png" alt="">
+                    <h1 class="text-black font-bold">0 BDT</h1>
+
+                </div><br>
+
+                <h1 class="text-big">Donate for Flood at Noakhali, Bangladesh</h1><br>
+                <p class="text-small"> The recent floods in Noakhali have caused significant damage to homes
+                    infrastructure. Your donation will help provide essential supplies and to those affected by this
+                    disaster. Every contribution, big or small, makes difference. Please join us in supporting the
+                    relief efforts and making a positive impact on the lives of those in need.</p><br>
+                <input type="text" placeholder="Write Donation Amount"
+                    class="input input-bordered bg-white w-full max-w-[522px]" /><br><br>
+                <button class="button w-[522px] text-center">Donate Now</button>
+            </div>
+
+
+
+        </div>
+        <!-- 2nd card end -->
+
+        <!-- 3rd card start -->
+        <div class="pb-28">
+            <div class="max-w-[75%] mx-auto p-7 flex gap-10 mt-5 " style="box-sizing: border-box;
+                border: 1px solid rgba(17, 17, 17, 0.1);
+                border-radius: 16px;
+                background: rgb(255, 255, 255);">
+
+                <img src="images/last.png" alt="">
+
+
+                <div class="max-w-[522px] ">
+                    <div class="flex gap-3 max-w-[110px]" style="border-radius: 8px;
+                       background: rgba(17, 17, 17, 0.05); padding: 7px;">
+
+                        <img src="images/dollar 1.png" alt="">
+                        <h1 class="text-black font-bold">0 BDT</h1>
+
+                    </div><br>
+
+                    <h1 class="text-big">Donate for Flood at Noakhali, Bangladesh</h1><br>
+                    <p class="text-small"> The recent floods in Noakhali have caused significant damage to homes
+                        infrastructure. Your donation will help provide essential supplies and to those affected by this
+                        disaster. Every contribution, big or small, makes difference. Please join us in supporting the
+                        relief efforts and making a positive impact on the lives of those in need.</p><br>
+                    <input type="text" placeholder="Write Donation Amount"
+                        class="input input-bordered bg-white w-full max-w-[522px]" /><br><br>
+                    <button class="button w-[522px] text-center">Donate Now</button>
+                </div>
+            </div>
+        </div>
+        <!-- 3rd card end -->
+    </main>
+
+    <footer>
+
+    </footer>
 
 </body>
+
 </html>
