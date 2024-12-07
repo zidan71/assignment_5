@@ -14,8 +14,3 @@ document.getElementById('donation-button').addEventListener('click',function(){
 });
 
 
-document.getElementById('blog-button').addEventListener('click',function(){
-
-    window.location.href = '/blog.html'
-
-})
