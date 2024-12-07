@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.14/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <style>
+        /* font start */
+        @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+        /* font end */
+
+        .text-big {
+            font-family: "Lexend", sans-serif;
+            font-weight: 700;
+            font-size: 20px;
+            color: #111111;
+        }
+
+        .text-small {
+            font-family: "Lexend", sans-serif;
+            font-size: 16px;
+            font-weight: 300;
+        }
+
+        .button {
+            border-radius: 8px;
+            background: rgb(180, 244, 97);
+            color: rgb(17, 17, 17);
+            font-family: "Lexend", sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            text-align: left;
+            padding: 12px 32px 12px 32px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header class="sticky top-0 z-50">
+        <nav class="  bg-pink-100 ">
+            <div class="navbar lg:max-w-[80%] mx-auto flex justify-between pt-3 pb-7  ">
+
+                <button id="donate-button" class="button">Donate</button>
+                <div class="flex gap-3 ">
+                    <img src="images/donate 1.png" alt="">
+                    <h1 class="text-big">Blog for DOM</h1>
+                </div>
+
+                <div class="flex gap-3 ">
+                    <img src="images/dollar 1.png" alt="">
+                    <h2 id="available-balance" style="color: black; font-size: 20px; font-weight: 500;">5500 </h2>
+                    <span style="color: black; font-size: 20px; font-weight: 500;">BDT</span>
+                </div>
+
+            </div>
+
+        </nav>
+    </header>
+
+
+    <main class="h-[1000px] bg-white">
+
+
+        <section class="pt-5">
+
+            <div>
+                <h1 class="text-center text-gray-700 text-2xl font-bold my-4">What is the Document Object Model (DOM)?
+                </h1>
+                <p class="text-center mb-4 text-blue-500 font-semibold text-lg">
+                    The Document Object Model (DOM) is a programming interface for web documents. <br> It shows the
+                    structure of an HTML document as a tree of nodes, where each node corresponds <br> to part of the
+                    document (like elements, attributes, or text).
+                </p>
+
+                
+                <div class="divider "></div>
+
+
+                <h1 class="text-center text-gray-700 text-2xl font-bold my-4">How do you select an element from the DOM?
+                </h1>
+
+                <p class="text-center mb-4 text-lime-600 font-semibold text-lg">
+                    You can select an element from the DOM using JavaScript by using methods like, <br>
+
+                    <span class="text-blue-700">document.getElementById('id')</span> - selects an element by its ID. <br>
+                    <span class="text-blue-700">document.getElementsByClassName('class') </span>- selects elements by their class name. <br>
+                    <span class="text-blue-700">document.querySelector('selector')</span> - selects the first element matching a CSS selector. <br>
+                    <span class="text-blue-700">document.querySelectorAll('selector')</span> - selects all elements matching a CSS selector.
+                </p>
+
+                <div class="divider"></div>
+
+                <h1 class="text-center text-gray-700 text-2xl font-bold my-4">What is event delegation in the context of
+                    the DOM, and why is it useful? </h1>
+
+                <p class="text-center mb-4 text-blue-500 font-semibold text-lg">
+
+                    Event delegation is a technique in the DOM where you attach a single event listener to a parent <br>
+                    element instead of multiple listeners to individual child elements. When an event occurs, <br> it
+                    bubbles
+                    up the DOM, and the parent element can handle the event for its children. <br> It's useful because
+                     you can reduce the number of event listeners, which improves performance. <br>
+                    Dynamic Content: It works even for elements added to the page later.
+                </p>
+
+                <div class="divider"></div>
+
+                <h1 class="text-center text-gray-700 text-2xl font-bold my-4">How do you manipulate an element's
+                    attributes and styles using the DOM? </h1>
+
+                <p class="text-center mb-4 text-lime-600 font-semibold text-lg">
+                    For attributes: We can use <span class="text-blue-700">setAttribute()</span> to change an attribute
+                    <br> and <span class="text-blue-700">getAttribute()</span> is used to read
+                    an attribute. <span class="text-blue-700">removeAttribute()</span> can be used to delete an
+                    attribute. <br>also use the .style property to
+                    apply css styles
+
+                </p>
+            </div>
+
+        </section>
+
+
+        <script>
+            document.getElementById('donate-button').addEventListener('click', function () {
+
+                window.location.href = '/index.html'
+
+            })
+        </script>
+    </main>
+
+
+</body>
+
+</html>

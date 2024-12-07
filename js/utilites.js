@@ -21,7 +21,7 @@ function getTextValueById(id){
 
 function toggleButton(id){
 
-    document.getElementById('history').classList.add('hidden');
+    document.getElementById('show-history').classList.add('hidden');
     document.getElementById('history-hide').classList.add('hidden');
 
 

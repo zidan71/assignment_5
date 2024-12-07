@@ -23,13 +23,25 @@
 
         .text-small {
             font-family: "Lexend", sans-serif;
+            color: gray;
             font-size: 16px;
-            font-weight: 300;
+            font-weight:400;
         }
 
         .button {
             border-radius: 8px;
             background: rgb(180, 244, 97);
+            color: rgb(17, 17, 17);
+            font-family: "Lexend", sans-serif;
+            font-size: 20px;
+            font-weight: 600;
+            text-align: left;
+            padding: 12px 32px 12px 32px;
+          
+        }
+        .button2{
+            border-radius: 8px;
+        
             color: rgb(17, 17, 17);
             font-family: "Lexend", sans-serif;
             font-size: 20px;
@@ -45,7 +57,7 @@
         <nav class="  bg-pink-100 ">
             <div class="navbar lg:max-w-[80%] mx-auto flex justify-between pt-3 pb-7  ">
 
-                <button class="button">Blog</button>
+                <button id="blog-button" class="button">Blog</button>
                 <div class="flex gap-3 ">
                     <img src="images/donate 1.png" alt="">
                     <h1 class="text-big">Donate Bangladesh</h1>
@@ -82,23 +94,25 @@
             </div>
         </div>
         
-        <!-- popup message start -->
-
-
-
-        <!-- popup message end -->
+       
 
         <!-- toggle -->
         <div class=" pt-16 flex justify-center gap-7">
-            <button id="donation-button" class="button ">Donation</button>
-            <button id="history-button" class="button  bg-white outline outline-1 outline-black">History</button>
+            <button id="donation-button" class="button2 outline outline-1 bg-green-400">Donation</button>
+            <button id="history-button" class="button2   outline outline-1 outline-black">History</button>
         </div>
         <!-- toggle end -->
 
         <!-- history -->
-         <section id="history" class="max-w-[75%] mx-auto mt-7 bg-white hidden">
+         <section id="show-history"  class="max-w-[75%] mx-auto mt-7 bg-white hidden h-[800px]">
 
-            
+            <h1 class="text-big text-center">Your donation history</h1>
+
+           
+            <div id="history" class=" p-7 mb-5" >
+               
+            </div>
+           
 
          </section>
          <!-- history end -->
@@ -157,11 +171,8 @@
                    <span  class="text-black font-bold">BDT</span>
                </div><br>
 
-               <h1 id="second-name" class="text-big">Donate for Flood at Noakhali, Bangladesh</h1><br>
-               <p class="text-small"> The recent floods in Noakhali have caused significant damage to homes
-                   infrastructure. Your donation will help provide essential supplies and to those affected by this
-                   disaster. Every contribution, big or small, makes difference. Please join us in supporting the
-                   relief efforts and making a positive impact on the lives of those in need.</p><br>
+               <h1 id="second-name" class="text-big">Donate for Flood Relief in Feni,Bangladesh</h1><br>
+               <p class="text-small">Imagine waking up to find your home submerged, memories washed away, and hope clinging to the sound of rain. In Feni, Bangladesh, this is reality for thousands. This isn't just about donating—it's about being the hand that turns despair into a story of survival. Will you be the unexpected hero someone dreams of tonight?</p><br>
                <input id="second-card-donation" type="text" required placeholder="Write Donation Amount"
                    class="input input-bordered bg-white w-full max-w-[522px]" /><br><br>
                <button id="second-button" class="button md:w-[522px] lg:w-[522px] text-center">Donate Now</button>
@@ -191,11 +202,9 @@
                        <span  class="text-black font-bold">BDT</span>
                    </div><br>
 
-                   <h1 id="third-name" class="text-big">Donate for Flood at Noakhali, Bangladesh</h1><br>
-                   <p class="text-small"> The recent floods in Noakhali have caused significant damage to homes
-                       infrastructure. Your donation will help provide essential supplies and to those affected by this
-                       disaster. Every contribution, big or small, makes difference. Please join us in supporting the
-                       relief efforts and making a positive impact on the lives of those in need.</p><br>
+                   <h1 id="third-name" class="text-big">Aid for Injured in the Quota Movement</h1><br>
+                   <p class="text-small"> 
+                    In the aftermath of the Quota Movement in Bangladesh, many injured voices still echo unheard. These are not just wounds of the body but marks of courage and conviction. Your support can turn their pain into resilience, their struggle into strength. Let’s stand with those who dared to dream of change—because healing is the first step toward justice.</p><br>
                    <input id="third-card-donation" type="text" required placeholder="Write Donation Amount"
                        class="input input-bordered bg-white w-full max-w-[522px]" /><br><br>
                    <button id="third-button" class="button  md:w-[522px] lg:w-[522px] text-center">Donate Now</button>
@@ -210,6 +219,7 @@
      <script src="js/utilites.js"></script>
      <script src="js/donateNow.js"></script>
      <script src="js/features.js"></script>
+     <script src="js/toggle.js"></script>
 
     </main>
 

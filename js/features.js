@@ -1,7 +1,7 @@
 document.getElementById('history-button').addEventListener('click',function(){
 
 
-    toggleButton('history');
+    toggleButton('show-history');
 
   
 
